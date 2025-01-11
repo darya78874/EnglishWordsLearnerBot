@@ -1,8 +1,13 @@
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-def ease_link_kb():
-    inline_kb_list = [
-        [InlineKeyboardButton(text="Получить цену продукта💰", callback_data='get_price')],
-        [InlineKeyboardButton(text="Список продуктов📃", callback_data='list_products')]
+def inline_keyboard():
+
+    keyboard = [
+
+        [InlineKeyboardButton("Добавить слово", callback_data='add_word')],
+
+        [InlineKeyboardButton("Список слов", callback_data='list_words')]
+
     ]
-    return InlineKeyboardMarkup(inline_keyboard=inline_kb_list)
+
+    return InlineKeyboardMarkup(keyboard)
