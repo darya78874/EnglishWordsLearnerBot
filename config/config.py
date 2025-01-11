@@ -1,1 +1,8 @@
+import os
+
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+
+DATABASE_URI = os.getenv("DATABASE_URI")
+
+TRANSLATOR_API_KEY = os.getenv("TRANSLATOR_API_KEY")
 
